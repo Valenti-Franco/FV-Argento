@@ -1,0 +1,94 @@
+
+
+.CanchaContainer{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    contain: content;
+   
+    /* background: rgb(231, 192, 192); */
+/* background: linear-gradient(90deg, rgba(0,0,0,0.9495259831460674) 6%, rgba(0,0,0,0.2781776685393258) 100%); */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.Escudos{
+    max-width: 50vw;
+    max-height: 50vh;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+.ContainerEscudos{
+    width: 40%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    
+    left: -1vw;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3vw;
+    align-items: center;
+}
+.item {
+    display: block;
+    max-width: 9vw;
+    transition: all 1s;   
+}
+.itemImg{
+    
+    width: 100%;
+    margin: 2% auto auto;
+    cursor: pointer;
+    transition: box-shadow .1s, transform .1s;
+}
+.itemImgSelect{
+    max-width: 360px;
+    max-height: 360px;
+    position: static;
+    width: 100%;
+    margin: 2% auto auto;
+    transition: box-shadow .1s, transform .1s;
+    
+}
+
+.menu{
+    position: fixed;
+    bottom: 50%;
+    width: 80px;
+    right: 50px;
+    height: 250px;
+    align-items: space-between;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #1a1a1a;
+    border-radius: 25px;
+    border: 2px solid #aaa;
+
+}
+.button:hover{
+    background-color: #444;
+}
+.button{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    /* font-size: 1em; */
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    display: flex;
+    justify-content: center;
+    /* font-size: 0px; */
+    /* padding: 5px; */
+    /* height: 50px; */
+}
+
+

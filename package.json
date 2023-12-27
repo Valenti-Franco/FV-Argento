@@ -9,9 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.92.7",
+    "apexcharts": "^3.45.1",
+    "framer-motion": "^10.16.16",
+    "google-map-react": "^2.2.1",
+    "gsap": "^3.12.4",
+    "next": "14.0.4",
     "react": "^18",
+    "react-apexcharts": "^1.4.1",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "react-three-fiber": "^6.0.13",
+    "swiper": "^11.0.5",
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "eslint": "^8",

@@ -1,0 +1,128 @@
+.fullname{
+    text-transform: uppercase;
+    font-size: 36px;
+    background-color: #00000071;
+    /* color: #0400ff; */
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    /* width: 45%; */
+    text-wrap: balance;
+    text-align: center;
+    padding: 20px;
+    /* border-radius: 20px; */
+    box-shadow: 3px 3px 10px #000000;
+    align-self: flex-start;
+    /* height: 150px; */
+    text-shadow: 5px 5px 6px #000;
+    margin: 15px 0px !important;
+    text-align: center;
+
+}
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.fundation{
+    font-size: 50px;
+    background-color: #00000071;
+    box-shadow: 3px 3px 10px #000000;
+   align-self: flex-start;
+   font-weight: 900;
+   font-family: 'Roboto', sans-serif;
+    /* width: 25%; */
+        text-wrap:balance;
+    text-align: center;
+    padding: 10px 20px;
+
+    text-shadow: 5px 5px 6px #000;
+}
+
+.map{
+    border: 0px;
+    width: 40vw;
+    height: 60vh;
+}
+.contCancha{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nameCancha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.itemColumn{
+    background: rgb(224, 224, 224);
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    
+}
+.itemColumnSmall{
+    background: rgb(16, 97, 93);
+    height: 20px;
+    width: 20px;
+    border: 1px solid #000;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    
+}
+
+.containeritemColumn{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    
+    transition: all 3s;
+    
+}
+.itemTextSmall{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+    max-width: 45%;
+    contain: content;
+     color: #fff;
+     background: #000000ad;
+     font-size: 16px;
+ 
+}
+.itemText{
+   padding: 0px 30px;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+   max-width: 45%;
+   contain: content;
+    color: #fff;
+    background: #000000a2;
+    font-size: 28px
+
+}
+.titleCopas{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
