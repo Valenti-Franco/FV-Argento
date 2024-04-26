@@ -585,7 +585,7 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                           </div>
                         </div>
                         <Button color="primary" onPress={onOpen}>
-                          Open Modal
+                          Ver Todo el Plantel
                         </Button>
                       </div>
 
@@ -638,9 +638,6 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                                   onPress={onClose}
                                 >
                                   Close
-                                </Button>
-                                <Button color="primary" onPress={onClose}>
-                                  Action
                                 </Button>
                               </ModalFooter>
                             </>

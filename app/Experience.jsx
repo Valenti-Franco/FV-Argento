@@ -23,6 +23,8 @@ const Experience = ({
   setSection,
   enableControls,
   setEnableControls,
+  isScrollAnimate,
+  setIsScrollAnimate,
 }) => {
   const cameraPositionX = useMotionValue();
   const cameraPositionY = useMotionValue();
@@ -35,7 +37,6 @@ const Experience = ({
   const data = useScroll();
 
   const cameraLookAtX = useMotionValue();
-
   useEffect(() => {
     // console.log(section);
     if (enableControls) {
@@ -287,14 +288,21 @@ const Experience = ({
 
   useFrame((state) => {
     let curSection = Math.floor(data.scroll.current * data.pages);
-    curSection = curSection;
-    // console.log(curSection)
-    if (curSection > 3) {
-      curSection = 3;
-    }
-
-    if (curSection !== section) {
-      setSection(curSection);
+    if (!isScrollAnimate) {
+      curSection = curSection;
+      // console.log(curSection)
+      if (curSection > 3) {
+        curSection = 3;
+      }
+      if (curSection !== section) {
+        setSection(curSection);
+      }
+    } else {
+      // console.log("first");
+      if (curSection === 0) {
+        setIsScrollAnimate(false);
+      }
+      setSection(0);
     }
 
     // Configurar la posición y el punto de mira para la sección 0
