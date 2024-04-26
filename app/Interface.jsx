@@ -110,10 +110,19 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                     variant="bordered"
                     color="primary"
                   >
-                    <Tab className=" w-full h-full  " key="photos" title="Club">
+                    <Tab
+                      className=" w-full h-full z-10  "
+                      key="photos"
+                      title="Club"
+                    >
                       <Card className="bg-transparent  h-full ">
                         <CardBody className=" overflow-hidden h-full flex items-center   text-white">
-                          <div className="flex justify-around h-full w-full flex-col">
+                          <div
+                            className={
+                              style.club +
+                              " flex justify-around h-full w-full flex-col "
+                            }
+                          >
                             <div className="flex flex-col gap-2 ">
                               <ImagenConMousemove
                                 key={Escudo}
@@ -192,7 +201,10 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                       </Card>
                     </Tab>
                     <Tab
-                      className="w-full h-full    justify-around flex flex-col   "
+                      className={
+                        style.club +
+                        " w-full h-full z-10    justify-around flex flex-col   "
+                      }
                       key="titulos"
                       title="Titulos"
                     >
@@ -358,12 +370,12 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                           aria-label="Primera División"
                           title="Primera División"
                         >
-                          <div className="flex gap-2 flex-col">
+                          <div className="flex  gap-2 flex-col">
                             <span></span>
                             <b className="text-2xl text-center border-b-1">
                               {equipoInfo.PrimeraDivision.length}{" "}
                             </b>
-                            <ol className=" max-h-[55vh] overflow-auto">
+                            <ol className=" h-24 md:h-auto mb-4 max-h-[45vh] overflow-auto">
                               {equipoInfo.PrimeraDivision.map((copa, index) => (
                                 <li key={index}>
                                   <p>
@@ -377,13 +389,22 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                       </Accordion>
                     </Tab>
                     <Tab
-                      className=" w-full h-full flex flex-col  "
+                      className="w-full h-full flex  flex-col  "
                       key="plantel"
                       title="Plantel"
                     >
-                      <div className="w-full h-[85vh] flex  justify-around flex-col items-center">
+                      <div
+                        className={
+                          style.club +
+                          " " +
+                          " w-full h-[85vh] flex  justify-around flex-col items-center"
+                        }
+                      >
                         <div
-                          className="h-full w-full max-w-[400px] max-h-[500px]  rounded-xl flex items-end bg-center  bg-contain bg-no-repeat"
+                          className={
+                            style.plantel +
+                            " h-full w-full max-w-[400px] max-h-[500px]  rounded-xl flex items-end bg-center  bg-contain bg-no-repeat"
+                          }
                           style={{ backgroundImage: `url(${campo.src})` }}
                         >
                           <div className=" h-5/6 w-full flex  roun  justify-around flex-col items-stretch">
@@ -393,7 +414,10 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                                   <>
                                     <div
                                       key={index}
-                                      className="w-12  relative h-12 flex justify-center items-center"
+                                      className={
+                                        style.player +
+                                        " w-12  relative h-12 flex justify-center items-center"
+                                      }
                                     >
                                       <Popover
                                         className=" bg-transparent"
@@ -433,7 +457,10 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                                   <>
                                     <div
                                       key={index}
-                                      className="w-12  relative h-12 flex justify-center items-center"
+                                      className={
+                                        style.player +
+                                        " w-12  relative h-12 flex justify-center items-center"
+                                      }
                                     >
                                       <Popover
                                         className=" bg-transparent"
@@ -477,7 +504,10 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                                   <>
                                     <div
                                       key={index}
-                                      className="w-12  relative h-12 flex justify-center items-center"
+                                      className={
+                                        style.player +
+                                        " w-12  relative h-12 flex justify-center items-center"
+                                      }
                                     >
                                       <Popover
                                         className=" bg-transparent"
@@ -512,7 +542,12 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                               )}
                             </div>
                             <div className="w-full  h-12 flex justify-evenly">
-                              <div className="w-12  relative h-12 flex justify-center items-center">
+                              <div
+                                className={
+                                  style.player +
+                                  " w-12  relative h-12 flex justify-center items-center"
+                                }
+                              >
                                 <Popover
                                   className=" bg-transparent"
                                   placement="bottom"
@@ -520,20 +555,15 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                                   showArrow
                                 >
                                   <PopoverTrigger>
-                                    <div>
-                                      <Button
-                                        unselectable="true"
-                                        className="bg-transparent"
-                                      >
-                                        <Shirts name={equipoInfo.nombre} />
-                                        <p className="text-white drop-shadow-2xl font-extrabold bg-black  bg-opacity-30  rounded-full absolute">
-                                          {
-                                            equipoInfo.playersTitular?.arquero
-                                              .number
-                                          }
-                                        </p>
-                                      </Button>
-                                    </div>
+                                    <Button className="bg-transparent">
+                                      <Shirts name={equipoInfo.nombre} />
+                                      <p className="text-white drop-shadow-2xl font-extrabold bg-black  bg-opacity-30  rounded-full absolute">
+                                        {
+                                          equipoInfo.playersTitular?.arquero
+                                            .number
+                                        }
+                                      </p>
+                                    </Button>
                                   </PopoverTrigger>
                                   <PopoverContent>
                                     <User

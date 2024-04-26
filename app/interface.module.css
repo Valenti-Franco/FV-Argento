@@ -194,3 +194,25 @@
     
     }
 }
+
+
+@media screen and (max-height:  700px ) and (min-width: 567px) and (max-width: 1267px) {
+    .plantel{
+        transform: rotateZ(90deg);
+        max-width: 50%;
+        max-height: 100%;
+        margin-bottom: 80px;
+        display: flex;
+       
+    }
+    .player{
+        transform: rotateZ(-90deg);
+    }
+    .club{
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+}

@@ -140,15 +140,16 @@
     .top{
         position: fixed;
         bottom: 10vh;
-        width: 30px;
+        width: 45px;
         right: 50px;
-        height: 30px;
+        height: 45px;
         align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border-radius: 100%;
+        padding: 10px;
         background-color: #1a1a1a;
-        border-radius: 5px;
         border: 2px solid #aaa;
     }
     .menu{
@@ -174,3 +175,20 @@
 }
 
 
+@media screen and (max-height:  700px ) and (min-width: 567px) and (max-width: 1267px) {
+    .top{
+        position: fixed;
+        top: 10vh;
+        width: 45px;
+        right: 50px;
+        height: 45px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #1a1a1a;
+        border-radius: 5px;
+        border: 2px solid #aaa;
+    }
+    
+}
