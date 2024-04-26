@@ -1,7 +1,7 @@
 "use client";
 import { animate } from "framer-motion";
 import { useMotionValue } from "framer-motion";
-import React from "react";
+import React, { useRef } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useFrame } from "react-three-fiber";
@@ -15,6 +15,8 @@ import { Independiente } from "../assets/estadios/Independiente";
 import { River } from "../assets/estadios/River";
 import { useScroll } from "@react-three/drei";
 import { framerMotionConfig } from "./config";
+import gsap from "gsap";
+
 const Experience = ({
   Escudo,
   section,
@@ -37,7 +39,7 @@ const Experience = ({
   useEffect(() => {
     // console.log(section);
     if (enableControls) {
-      if (section === 0 || section === 1) {
+      if (section === 0) {
         const currentRotationY = cameraRotationY.get();
         const newRotationY = 4.24; // Girar 180 grados en el eje Y (Math.PI radianes)
 
@@ -84,7 +86,7 @@ const Experience = ({
           ...framerMotionConfig, // Opciones adicionales de la animación (pueden ajustarse)
         });
       }
-      if (section === 2) {
+      if (section === 1 || section === 2) {
         const currentRotationY = cameraRotationY.get();
         const newRotationY = 5.04; // Girar 180 grados en el eje Y (Math.PI radianes)
 
@@ -132,7 +134,7 @@ const Experience = ({
           ...framerMotionConfig, // Opciones adicionales de la animación (pueden ajustarse)
         });
       }
-      if (section === 4) {
+      if (section === 3) {
         animate(cameraRotationZ, 0.6, {
           type: "tween",
           duration: 1.5, // Tipo de animación
@@ -168,7 +170,7 @@ const Experience = ({
         });
       }
     } else {
-      if (section === 0 || section === 1) {
+      if (section === 0) {
         animate(cameraPositionX, 180, {
           type: "spring",
           duration: 1.5, // Tipo de animación
@@ -206,7 +208,7 @@ const Experience = ({
           ...framerMotionConfig, // Opciones adicionales de la animación (pueden ajustarse)
         });
       }
-      if (section === 2) {
+      if (section === 1 || section === 2) {
         animate(cameraRotationZ, -3.1, {
           type: "tween",
           duration: 1.5, // Tipo de animación
@@ -244,7 +246,7 @@ const Experience = ({
           ...framerMotionConfig, // Opciones adicionales de la animación (pueden ajustarse)
         });
       }
-      if (section === 4) {
+      if (section === 3) {
         animate(cameraRotationZ, -3.1, {
           type: "tween",
           duration: 1.5, // Tipo de animación
@@ -285,9 +287,10 @@ const Experience = ({
 
   useFrame((state) => {
     let curSection = Math.floor(data.scroll.current * data.pages);
-
-    if (curSection > 4) {
-      curSection = 4;
+    curSection = curSection;
+    // console.log(curSection)
+    if (curSection > 3) {
+      curSection = 3;
     }
 
     if (curSection !== section) {
@@ -302,14 +305,12 @@ const Experience = ({
     state.camera.rotation.x = cameraRotationX.get();
     state.camera.rotation.y = cameraRotationY.get();
     // state.camera = camera.get();
-
     // state.camera.lookAt(cameraLookAtX.get(), -1, 22);
 
     // Restaurar el zoom a su valor predeterminado para otras secciones diferentes de 1
     state.camera.zoom = 1;
     state.camera.updateProjectionMatrix();
   });
-
   return (
     <>
       {Escudo.id === "Boca" ? (

@@ -39,16 +39,16 @@ const Cancha = () => {
       className={style.CanchaContainer}
       style={{ background: background }}
     >
-      <div
+      {/* <div
         key={"container" + Escudo.id}
         id={"container" + Escudo.id}
         // className={style.Escudos}
-      ></div>
+      ></div> */}
       <div style={{ width: "100%", height: "100vh" }}>
         <Canvas camera={{ zoom: 0.1, position: [25, 10, 5] }}>
           <ambientLight color={"#fffff"} intensity={2.5} />
 
-          <ScrollControls pages={5}>
+          <ScrollControls pages={3}>
             {Escudo.id !== "Newells" ? (
               <>
                 <directionalLight position={[-10, 10, 10]} intensity={4.5} />
@@ -64,9 +64,6 @@ const Cancha = () => {
               </>
             )}
 
-            {/* <pointLight position={[35, 25, 0]} intensity={0.4} />
-            <pointLight position={[-35, 25, 0]} intensity={0.4} /> */}
-
             <Suspense fallback={null}>
               <Experience
                 section={section}
@@ -76,19 +73,22 @@ const Cancha = () => {
                 setEnableControls={setEnableControls}
               />
             </Suspense>
-            <Scroll html>
-              <Interface
-                noText={noText}
-                section={section}
-                setSection={setSection}
-                Escudo={Escudo}
-              />
-            </Scroll>
+            <Scroll html></Scroll>
           </ScrollControls>
         </Canvas>
       </div>
-
-      <div className={style.menu}>
+      <Interface
+        noText={noText}
+        section={section}
+        setSection={setSection}
+        Escudo={Escudo}
+        className={style.menu}
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className={style.menu}
+      >
         <Link className={style.button} href={`/`}>
           <svg
             height="34px"
@@ -299,7 +299,7 @@ const Cancha = () => {
             </svg>
           )}
         </button>
-      </div>
+      </motion.div>
     </motion.body>
   );
 };

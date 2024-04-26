@@ -6,12 +6,13 @@
     padding: 0;
     margin: 0;
     contain: content;
+
    
     /* background: rgb(231, 192, 192); */
 /* background: linear-gradient(90deg, rgba(0,0,0,0.9495259831460674) 6%, rgba(0,0,0,0.2781776685393258) 100%); */
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row-reverse;
 }
 .Escudos{
     max-width: 50vw;
@@ -57,7 +58,8 @@
 
 .menu{
     position: fixed;
-    bottom: 50%;
+    bottom: calc(50vh - 127px);
+
     width: 80px;
     right: 50px;
     height: 250px;
@@ -89,6 +91,28 @@
     /* font-size: 0px; */
     /* padding: 5px; */
     /* height: 50px; */
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        position: fixed;
+        bottom: 0%;
+        width: 100%;
+        right: 0px;
+        height: 50px;
+        align-items: space-between;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #1a1a1a;
+        border-radius: 25px 25px 0px 0px;
+        border: 2px solid #aaa;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+    
+    }
+    
 }
 
 

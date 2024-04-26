@@ -65,10 +65,10 @@ function ImagenConMousemove(props) {
   };
   return (
     <motion.div
+      className="flex justify-center"
       initial={{ y: 100, opacity: 1 }}
       animate={{ y: 0, opacity: 1 }}
       exit={{ x: "300%", opacity: 1, scale: 0.1 }}
-      style={{ display: "flex" }}
     >
       {/* <Link to={`/${props.id}`} className={style.link}> */}
 

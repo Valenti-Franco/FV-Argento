@@ -1,10 +1,12 @@
+/* dm-sans-latin-wght-normal */
+
+ 
 .fullname{
     text-transform: uppercase;
-    font-size: 36px;
-    background-color: #00000071;
+    font-size: 26px;
+    /* background-color: #00000071; */
     /* color: #0400ff; */
     font-weight: 900;
-    font-family: 'Roboto', sans-serif;
     /* width: 45%; */
     text-wrap: balance;
     text-align: center;
@@ -18,16 +20,19 @@
     text-align: center;
 
 }
+
 .container{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
 }
 .fundation{
-    font-size: 50px;
-    background-color: #00000071;
-    box-shadow: 3px 3px 10px #000000;
+    font-size: 16px;
+    background-color: #0000003d;
+    /* box-shadow: 3px 3px 10px #000000; */
    align-self: flex-start;
    font-weight: 900;
    font-family: 'Roboto', sans-serif;
@@ -44,10 +49,53 @@
     width: 40vw;
     height: 60vh;
 }
-.contCancha{
-    width: 100%;
+/* .button{
+    
+    background: #000;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    padding: 10px;
+    border: 3px solid #fff;
+} */
+.button:hover{
+    background-color: #000000;
+}
+.button{
+    padding: 10px;
+    position: absolute;
+    border-radius: 100%;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    /* font-size: 1em; */
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1abd;
+    cursor: pointer;
+    transition: border-color 0.25s;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+    border: 3px solid #fff;
+
+}
+.contCancha{
+    overflow: hidden;
+    color: #fff;
+    width: 450px;
+    position: fixed;
+    
+    background: #000000b2;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    height: 100vh;
+    contain: content;
+    flex-direction: column;
+
 }
 .nameCancha{
     display: flex;
@@ -125,4 +173,24 @@
     width: 100% !important;
     display: flex;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 1268px) {
+    .contCancha{
+        overflow: hidden;
+        color: #fff;
+        max-width: 100%;
+        width: 100%;
+        position: fixed;
+        
+        background: #000000b2;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+        height: 100vh;
+        contain: content;
+        flex-direction: column;
+    
+    }
 }

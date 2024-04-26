@@ -1,4 +1,6 @@
-import { Suspense } from "react";
+import "./style.css";
+import { Lato } from "next/font/google";
+import { NextUIProvider } from "@nextui-org/react";
 
 export const metadata = {
   title: "FV Argento",
@@ -11,9 +13,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
-        <Suspense fallback={<>HOLA</>}>{children}</Suspense>
+        {children}
+        {/* <NextUIProvider>{children}</NextUIProvider> */}
       </body>
     </html>
   );

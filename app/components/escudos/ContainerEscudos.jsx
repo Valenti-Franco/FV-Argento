@@ -1,21 +1,23 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import style from "./index.module.css";
 import { useState } from "react";
-import Cancha from "../cancha/Cancha";
-import ImagenConMousemove from "./ImagenConMousemove";
 
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-
 import "./styles.css";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper, useSwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import json from "../../../public/info.json";
-import { EffectCoverflow, Pagination } from "swiper/modules";
-
+import {
+  EffectCoverflow,
+  Navigation,
+  Mousewheel,
+  Pagination,
+  Keyboard,
+} from "swiper/modules";
 import BocaPng from "../../../assets/img/escudos/Boca.png";
 import IndependientePng from "../../../assets/img/escudos/Independiente.png";
 import SanLorenzoPng from "../../../assets/img/escudos/SanLorenzo.png";
@@ -26,23 +28,24 @@ import EstudiantesPng from "../../../assets/img/escudos/Estudiantes.png";
 import CentralPng from "../../../assets/img/escudos/Central.png";
 
 const ContainerEscudos = ({ Escudos, enableControls, setEnableControls }) => {
-  const [Escudo, setEscudo] = useState("");
-  const [activeSlider, setActiveSlider] = useState(3);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [showCarousel, setShowCarousel] = useState(true);
-  const nextImage = () => {
-    if (currentIndex < Escudos.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
+  const [swiperReady, setSwiperReady] = useState(true);
+  let initialNumberEscudos;
+  try {
+    initialNumberEscudos = window.localStorage.getItem("Number");
+  } catch (error) {
+    initialNumberEscudos = 0; // Valor predeterminado en caso de error
+  }
+  const [numberEscudos, setNumberEscudos] = useState(initialNumberEscudos);
 
-  const [activeEsc, setActiveEsc] = useState(Escudos[0]);
-  // const [activeSlider, setActiveSlider] = useState(3);
+  const [activeSlider, setActiveSlider] = useState(initialNumberEscudos);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const [activeEsc, setActiveEsc] = useState(Escudos[initialNumberEscudos]);
   const [estilo, setEstilo] = useState({
-    background: "-webkit-radial-gradient(center center, #cdc40ce7, #000000)",
+    background: `-webkit-radial-gradient(center center,rgb(255 255 255 / 100%), ${json.equipos[0]?.coloresPrincipales[0]}, ${json.equipos[0]?.coloresPrincipales[1]},#000000)`,
   });
   const [estilopilar, setEstiloPilar] = useState({
-    background: "-webkit-radial-gradient(center center, #cdc40ce7, #000000)",
+    background: `${json.equipos[0]?.coloresPrincipales[0]}`,
   });
   const prevImage = () => {
     if (currentIndex > 0) {
@@ -51,25 +54,22 @@ const ContainerEscudos = ({ Escudos, enableControls, setEnableControls }) => {
   };
 
   const handleSlideChange = (swiper) => {
-    // Get the currently active slide's index
-    // console.log(swiper.activeIndex);
     const activeIndex = swiper.activeIndex;
-    // Update the activeEsc state with the corresponding value from Escudos
-    // console.log(activeIndex);
+    localStorage.setItem("Number", activeIndex);
+    setNumberEscudos(activeIndex);
     setActiveSlider(activeIndex);
-
     setActiveEsc(Escudos[activeIndex]);
-    // console.log(activeEsc);
   };
 
   useEffect(() => {
-    // console.log(activeEsc);
+    const timer = setTimeout(() => {
+      setSwiperReady(true);
+    }, 1000);
     const equipoInfo = json.equipos.find(
       (equipo) => equipo.nombre === activeEsc
     );
 
     if (equipoInfo) {
-      // Update the background color based on equipoInfo.color
       setEstilo({
         background: `-webkit-radial-gradient(center center,rgb(255 255 255 / 100%), ${equipoInfo.coloresPrincipales[0]}, ${equipoInfo.coloresPrincipales[1]},#000000)`,
       });
@@ -77,7 +77,7 @@ const ContainerEscudos = ({ Escudos, enableControls, setEnableControls }) => {
         background: equipoInfo.coloresPrincipales[0],
       });
     }
-  }, [activeEsc, json]);
+  }, [activeEsc]);
 
   const getEscudoImage = (escudoName) => {
     switch (escudoName) {
@@ -101,105 +101,142 @@ const ContainerEscudos = ({ Escudos, enableControls, setEnableControls }) => {
         return null;
     }
   };
+  const swiperRef = useRef();
 
+  const slideNext = () => {
+    console.log(swiper);
+  };
   return (
     <>
-      {!Escudo ? (
-        <>
-          <div id="drag-container">
-            <Swiper
-              effect={"coverflow"}
-              grabCursor={true}
-              centeredSlides={true}
-              slidesPerView={"auto"}
-              coverflowEffect={{
-                rotate: 40,
-                stretch: 400,
-                depth: 1000,
-                modifier: 1,
-                slideShadows: false,
-              }}
-              style={{
-                // backgroundSize: "cover",
-                // backgroundPosition: "center",
-                maxWidth: "50vw",
-                // height: "100px", // Ajustamos la altura para que se ajuste al contenido
-                // marginTop: "1rem",
-                overflow: "visible", // Permitimos que el contenido se muestre fuera del contenedor
-                // position: "absolute",
-              }}
-              initialSlide={activeSlider}
-              loop={false}
-              onSlideChange={(swiper) => handleSlideChange(swiper)}
-              // pagination={{ clickable: true }}
-              modules={[EffectCoverflow, Pagination]}
-            >
-              <div id="spin-container">
-                {Escudos.map((esc, index) => (
-                  <SwiperSlide key={index}>
-                    <Link
-                      href={`/${esc}`}
-                      key={"container" + esc}
-                      id={"container" + esc}
-                      className={style.Escudos + " " + style.item}
-                    >
-                      <motion.img
-                        initial={{ scale: 0.8, filter: "blur(8px)" }}
-                        animate={{ scale: 1, filter: "blur(0px)" }}
-                        exit={{ scale: 0.8, filter: "blur(8px)" }}
-                        src={getEscudoImage(esc)}
-                        alt={esc}
-                      />
-                    </Link>
-                  </SwiperSlide>
-                ))}
-              </div>
-              <div style={estilo} id="ground"></div>
-              <div style={{ zIndex: "1" }}>
-                <div style={estilo} id="ground1"></div>
-                <div style={estilopilar} id="ground3"></div>
-                <div style={estilopilar} id="ground4"></div>
-                <div style={estilopilar} id="ground5"></div>
-                <div style={estilopilar} id="ground6"></div>
-                <div id="ground2"></div>
-              </div>
-            </Swiper>
-          </div>
+      {swiperReady && (
+        <motion.div
+          initial={{ opacity: 0 }} // Opacidad inicial (invisible)
+          animate={{ opacity: 1 }} // Opacidad final (visible)
+          transition={{ duration: 0.5 }} // Duración de la transición
+          id="drag-container"
+        >
+          <Swiper
+            loop={false}
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            coverflowEffect={{
+              rotate: 40,
+              stretch: 400,
+              depth: 1000,
+              modifier: 1,
+              slideShadows: false,
+            }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            style={{
+              maxWidth: "50vw",
 
-          {/* <div className={style.ContainerEscudos}>
-            <div className={style.ContainerRow}>
-              {Escudos.map((esc, index) =>
-                index >= 4 ? (
+              overflow: "visible",
+            }}
+            keyboard={{
+              enabled: true,
+            }}
+            initialSlide={activeSlider}
+            mousewheel={true}
+            navigation={true}
+            onSlideChange={(swiper) => handleSlideChange(swiper)}
+            modules={[EffectCoverflow, Keyboard, Mousewheel, Navigation]}
+          >
+            <div id="spin-container">
+              {Escudos.map((esc, index) => (
+                <SwiperSlide key={index}>
                   <Link
-                    to={`/${esc}`}
+                    href={`/${esc}`}
                     key={"container" + esc}
                     id={"container" + esc}
                     className={style.Escudos + " " + style.item}
                   >
-                    <ImagenConMousemove
-                      Escudo={Escudo}
-                      setEscudo={setEscudo}
-                      key={esc}
-                      id={esc}
-                      src={"/src/assets/img/escudos/" + esc + ".png"}
+                    <img
+                      className=" w-[400]"
+                      src={getEscudoImage(esc)}
+                      alt={esc}
                     />
                   </Link>
-                ) : null
-              )}
+                </SwiperSlide>
+              ))}
             </div>
-          </div> */}
-          {/* <button onClick={prevImage}>Anterior</button>
-          <button onClick={nextImage}>Siguiente</button> */}
-        </>
-      ) : (
-        <>
-          <Cancha
-            Escudo={Escudo}
-            enableControls={enableControls}
-            setEnableControls={setEnableControls}
-            setEscudo={setEscudo}
-          />
-        </>
+            <div className={style.containerArrow} style={estilo} id="ground">
+              <svg
+                onClick={() => swiperRef.current.slidePrev()}
+                className={style.arrow}
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  {" "}
+                  <path
+                    opacity="1"
+                    d="M20 12.75C20.4142 12.75 20.75 12.4142 20.75 12C20.75 11.5858 20.4142 11.25 20 11.25V12.75ZM20 11.25H4V12.75H20V11.25Z"
+                    fill="#fff"
+                  ></path>{" "}
+                  <path
+                    d="M10 6L4 12L10 18"
+                    stroke="#fff"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>{" "}
+                </g>
+              </svg>
+              <svg
+                onClick={() => swiperRef.current.slideNext()}
+                className={style.arrow}
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  {" "}
+                  <path
+                    opacity="1.5"
+                    d="M4 11.25C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75V11.25ZM4 12.75H20V11.25H4V12.75Z"
+                    fill="#fff"
+                  ></path>{" "}
+                  <path
+                    d="M14 6L20 12L14 18"
+                    stroke="#fff"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>{" "}
+                </g>
+              </svg>
+            </div>
+            <div style={{ zIndex: "1" }}>
+              <div style={estilo} id="ground1"></div>
+              <div style={estilopilar} id="ground3"></div>
+              <div style={estilopilar} id="ground4"></div>
+              <div style={estilopilar} id="ground5"></div>
+              <div style={estilopilar} id="ground6"></div>
+              <div id="ground2"></div>
+            </div>
+          </Swiper>
+        </motion.div>
       )}
     </>
   );

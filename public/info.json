@@ -4,7 +4,12 @@
             "nombre": "Boca",
             "nombreCompleto": "Club Atlético Boca Juniors",
             "cancha": "La Bombonera",
-            "capacidad": 49000,
+            "capacidad": 54000,
+            "Lugar": "Barrio de La Boca",
+            "Hinchada": "La 12",
+            "Colores": "Azul y Amarillo",
+            "Apodo": "Xeneizes / Bosteros",
+            "Rivalidades": "River Plate",
             "mapa": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1322.932674928198!2d-58.364943!3d-34.635662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b6925e5473%3A0x1ca5b2748858b40d!2sEstadio%20Alberto%20J.%20Armando-%20La%20Bombonera!5e1!3m2!1ses!2sus!4v1695270564584!5m2!1ses!2sus",
             "fundacion": 1905,
             "FechaInauguración": "25 DE MAYO DE 1940",
@@ -26,6 +31,228 @@
                 "Copa Argentina 2020/21",
                 "Copa de la Liga 2022",
                 "Supercopa 2022"
+            ],
+            "plantel": [
+                {
+                    "numero": "ARQ",
+                    "nombre": "Sergio Romero",
+                    "edad": 37
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Javier García",
+                    "edad": 37
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Sebastián Díaz",
+                    "edad": 20
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Leandro Brey",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Marcos Rojo",
+                    "edad": 34
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Cristian Lema",
+                    "edad": 34
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Luis Advíncula",
+                    "edad": 34
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Frank Fabra",
+                    "edad": 33
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Jorge Figal",
+                    "edad": 30
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Marcelo Saracchi",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Lucas Blondel",
+                    "edad": 27
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Lautaro Blanco",
+                    "edad": 25
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Nicolás Valentini",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Dylan Gorosito",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Lautaro Di Lollo",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Aaron Anselmino",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Mateo Mendia",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Walter Molas",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Juan Ramírez",
+                    "edad": 30
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Guillermo Fernández",
+                    "edad": 32
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Jorman Campuzano",
+                    "edad": 27
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Cristian Medina",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Ezequiel Fernández",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Mauricio Benitez",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Jabes Saralegui",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Román Rodríguez",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Julián Ceballos",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Milton Delgado",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Santiago Dalmasso",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Edinson Cavani",
+                    "edad": 37
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Darío Benedetto",
+                    "edad": 33
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Lucas Janson",
+                    "edad": 29
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Norberto Briasco",
+                    "edad": 28
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Miguel Merentiel",
+                    "edad": 28
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Exequiel Zeballos",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Ezequiel Bullaude",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Kevin Zenon",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Vicente Taborda",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Luca Langoni",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Ignacio Rodríguez",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Valentino Simoni",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Juan Payal",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Iker Zufiaurre",
+                    "edad": 18
+                },
+                {
+                    "numero": "DT",
+                    "nombre": "Diego Martínez",
+                    "edad": 45
+                }
             ],
             "PrimeraDivision": [
                 "1919 AAF",
@@ -84,6 +311,69 @@
                 "Libertadores 2007",
                 "Recopa 2008"
             ],
+            "playersTitular": {
+                "arquero": {
+                    "name": "Romero",
+                    "number": 1,
+                    "img": "https://img.a.transfermarkt.technology/portrait/header/30690-1596803710.jpg?lm=1"
+                },
+                "defensores": [
+                    {
+                        "name": "Blanco",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/831161-1635706437.JPG?lm=1",
+                        "number": 23
+                    },
+                    {
+                        "name": "Rojo",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/93176-1633537711.JPG?lm=1",
+                        "number": 6
+                    },
+                    {
+                        "name": "Lema",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/147128-1537351960.jpg?lm=1",
+                        "number": 2
+                    },
+                    {
+                        "name": "Advíncula",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/103890-1689009563.jpg?lm=1",
+                        "number": 17
+                    }
+                ],
+                "mediocampo": [
+                    {
+                        "name": "G.Fernández",
+                        "img": "https://img.a.transfermarkt.technology/portrait/header/220647-1646343422.JPG?lm=1",
+                        "number": 8
+                    },
+                    {
+                        "name": "E.Fernández",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/664708-1574073310.jpg?lm=1",
+                        "number": 21
+                    },
+                    {
+                        "name": "Zenon",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/829966-1708005655.JPG?lm=1",
+                        "number": 22
+                    },
+                    {
+                        "name": "Saralegui",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/1174943-1705514491.jpg?lm=1",
+                        "number": 47
+                    }
+                ],
+                "delantero": [
+                    {
+                        "name": "Merentiel",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/481367-1621169984.jpg?lm=1",
+                        "number": 16
+                    },
+                    {
+                        "name": "Cavani",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/48280-1619791055.jpg?lm=1",
+                        "number": 10
+                    }
+                ]
+            },
             "coloresPrincipales": [
                 "#F6BD0F",
                 "#004481",
@@ -94,10 +384,177 @@
             "nombre": "Independiente",
             "cancha": "Estadio Independiente",
             "nombreCompleto": "Club Atlético Independiente",
+            "Apodo": "Rey de Copas / Diablos Rojos",
+            "Colores": "Rojo",
+            "Rivalidades": "Racing Club",
+            "Hinchada": "Los Diablos Rojos / La Mitad Más Uno",
+            "Lugar": "Avellaneda",
             "capacidad": 44220,
             "mapa": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1322.38020971733!2d-58.371123!3d-34.670285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3331355dd5fa9%3A0x5a2a6a4286d46f9!2sClub%20Atl%C3%A9tico%20Independiente!5e1!3m2!1ses!2sus!4v1695270484223!5m2!1ses!2sus",
             "fundacion": 1904,
             "FechaInauguración": " 28 de octubre de 2009",
+            "plantel": [
+                {
+                    "numero": "ARQ",
+                    "nombre": "Rodrigo Rey",
+                    "edad": 33
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Diego Segovia",
+                    "edad": 23
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Mateo Morro",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Mauricio Isla",
+                    "edad": 35
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Damián Pérez",
+                    "edad": 35
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Julio Buffarini",
+                    "edad": 35
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Felipe Aguilar",
+                    "edad": 31
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Adrián Sporle",
+                    "edad": 28
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Joaquín Laso",
+                    "edad": 33
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Edgar Elizalde",
+                    "edad": 24
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Ayrton Costa",
+                    "edad": 24
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Juan Fedorco",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Fernando Da Rosa",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Iván Marcone",
+                    "edad": 33
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Federico Mancuello",
+                    "edad": 35
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Jhonny Quiñónez",
+                    "edad": 25
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Gabriel Neves",
+                    "edad": 26
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Santiago Toloza",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Lucas González",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Alex Luna",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Ignacio Maestro Puch",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Santiago Salle",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Ruben Martinez",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Javier Ruiz",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Diego Tarzia",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Tomás Parmo",
+                    "edad": 16
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Alexis Canelo",
+                    "edad": 32
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Gabriel Ávalos",
+                    "edad": 32
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Rodrigo Marquez",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Matías Giménez",
+                    "edad": 25
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Santiago López",
+                    "edad": 18
+                },
+                {
+                    "numero": "DT",
+                    "nombre": "Carlos Tevez",
+                    "edad": 40
+                }
+            ],
             "PrimeraDivision": [
                 "1922 AmF",
                 "1926 AmF",
@@ -147,6 +604,69 @@
                 "Sudamericana 2017",
                 "Suruga Bank 2018"
             ],
+            "playersTitular": {
+                "arquero": {
+                    "name": "Rey",
+                    "img": "https://img.a.transfermarkt.technology/portrait/medium/166591-1676234250.JPG?lm=1",
+                    "number": 33
+                },
+                "defensores": [
+                    {
+                        "name": "Costa",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/842910-1676234340.JPG?lm=1",
+                        "number": 79
+                    },
+                    {
+                        "name": "Laso",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/360797-1676234283.JPG?lm=1",
+                        "number": 2
+                    },
+                    {
+                        "name": "Fedorco",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/997070-1707925618.JPG?lm=1",
+                        "number": 29
+                    },
+                    {
+                        "name": "Isla",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/43722-1567076491.JPG?lm=1",
+                        "number": 4
+                    }
+                ],
+                "mediocampo": [
+                    {
+                        "name": "Sporle",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/440371-1622032479.jpg?lm=1",
+                        "number": 18
+                    },
+                    {
+                        "name": "Mancuello",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/96313-1636330654.JPG?lm=1",
+                        "number": 11
+                    },
+                    {
+                        "name": "González",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/688778-1642448120.JPG?lm=1",
+                        "number": 17
+                    },
+                    {
+                        "name": "Neves",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/454181-1475692958.jpg?lm=1",
+                        "number": 8
+                    }
+                ],
+                "delantero": [
+                    {
+                        "name": "Ávalos",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/358418-1636129643.JPG?lm=1",
+                        "number": 9
+                    },
+                    {
+                        "name": "Canelo",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/249789-1580382425.jpg?lm=1",
+                        "number": 32
+                    }
+                ]
+            },
             "coloresPrincipales": [
                 "#E60026",
                 "#FFFFFF",
@@ -155,10 +675,252 @@
         },
         {
             "nombre": "SanLorenzo",
-            "nombreCompleto": "Club Atlético San Lorenzo de Almagro",
+            "nombreCompleto": "CA San Lorenzo de Almagro",
             "cancha": "Estadio Pedro Bidegain",
             "capacidad": 47000,
             "fundacion": 1908,
+            "Apodo": "Los Cuervos / Los Santos",
+            "Colores": "Azulgrana",
+            "Rivalidades": "Huracán",
+            "Hinchada": "La Gloriosa Butteler / La Banda del Matador",
+            "Lugar": "Boedo",
+            "plantel": [
+                {
+                    "numero": "ARQ",
+                    "nombre": "Facundo Altamirano",
+                    "edad": 28
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Gastón Gómez",
+                    "edad": 28
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Lautaro López",
+                    "edad": 23
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Mateo Clemente",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Gastón Campi",
+                    "edad": 33
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Jhohan Romaña",
+                    "edad": 25
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Nicolás Hernández",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Máximiliano Zelaya",
+                    "edad": 27
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Gastón Hernández",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Gonzalo Lujan",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Jeremias James",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Germán Pared",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Oscar Arias",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Elías Baez",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Daniel Herrera",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Alejo Córdoba",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Lautaro Montenegro",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Carlos Sánchez",
+                    "edad": 38
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Sebastián Blanco",
+                    "edad": 36
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Eric Remedi",
+                    "edad": 28
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Cristian Ferreira",
+                    "edad": 24
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Nahuel Barrios",
+                    "edad": 25
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Carlos Insaurralde",
+                    "edad": 25
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Ezequil Godoy",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Iván Tapia",
+                    "edad": 25
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Gonzalo Alassia",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Agustín Giay",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Tomás Porra",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Francisco Perruzzi",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Elián Mateo Irala",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Tobias Medina",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Mauro Pérez",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Emanuel Kovacs",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Santiago Sosa",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Gustavo Romero",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Ezequiel Cerutti",
+                    "edad": 32
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Cristian Tarragona",
+                    "edad": 33
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Diego Herazo",
+                    "edad": 28
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Adam Bareiro",
+                    "edad": 27
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Malcom Braida",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Alexis Cuello",
+                    "edad": 24
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Agustin Hausch",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Ivan Leguizamon",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Matías Hernández",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Ian Vera",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Thiago Perugini",
+                    "edad": 19
+                },
+                {
+                    "numero": "DT",
+                    "nombre": "Leandro Romagnoli",
+                    "edad": 43
+                }
+            ],
             "PrimeraDivision": [
                 "1923 AmF",
                 "1924 AmF",
@@ -188,6 +950,69 @@
                 "Sudamericana 2002",
                 "Libertadores 2014"
             ],
+            "playersTitular": {
+                "arquero": {
+                    "name": "Altamirano",
+                    "number": 13,
+                    "img": "https://img.a.transfermarkt.technology/portrait/medium/362358-1633726600.JPG?lm=1"
+                },
+                "defensores": [
+                    {
+                        "name": "Lujan",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/896536-1639413767.JPG?lm=1",
+                        "number": 35
+                    },
+                    {
+                        "name": "Romaña",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/741963-1647190514.png?lm=1",
+                        "number": 4
+                    },
+                    {
+                        "name": "Campi",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/292174-1599758025.jpeg?lm=1",
+                        "number": 22
+                    },
+                    {
+                        "name": "Braida",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/552185-1637345148.JPG?lm=1",
+                        "number": 21
+                    }
+                ],
+                "mediocampo": [
+                    {
+                        "name": "Barrios",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/503377-1635708060.JPG?lm=1",
+                        "number": 10
+                    },
+                    {
+                        "name": "Remedi",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/362364-1645889881.jpg?lm=1",
+                        "number": 5
+                    },
+                    {
+                        "name": "Blanco",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/54576-1678461887.jpg?lm=1",
+                        "number": 29
+                    },
+                    {
+                        "name": "Irala",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/1037802-1705672916.JPG?lm=1",
+                        "number": 17
+                    }
+                ],
+                "delantero": [
+                    {
+                        "name": "Tarragona",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/422698-1699915095.jpg?lm=1",
+                        "number": 9
+                    },
+                    {
+                        "name": "Bareiro",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/514120-1603130286.png?lm=1",
+                        "number": 11
+                    }
+                ]
+            },
             "coloresPrincipales": [
                 "#133654",
                 "#e13035",
@@ -210,11 +1035,246 @@
                 "2004 AP",
                 "2013 FIN"
             ],
+            "Apodo": "La Lepra",
+            "Colores": "Rojo y Negro",
+            "Rivalidades": "Rosario Central",
+            "Hinchada": "Los Leprosos",
+            "Lugar": "Rosario, Santa Fe",
             "titulosNacionales": [
                 "Copa de Honor 1911",
                 "Copa Ibarguren 1921",
                 "Copa Escobar 1949"
             ],
+            "plantel": [
+                {
+                    "numero": "ARQ",
+                    "nombre": "Lucas Hoyos",
+                    "edad": 34
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Ramiro Macagno",
+                    "edad": 27
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Leonel Vangioni",
+                    "edad": 36
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Gustavo Velázquez",
+                    "edad": 33
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Augusto Schott",
+                    "edad": 24
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Armando Méndez",
+                    "edad": 28
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Jherson Mosquera",
+                    "edad": 24
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Brian Calderara",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Tomás Jacob",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Ian Glavinovich",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Lucas Baños",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Éver Banega",
+                    "edad": 35
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Pablo Pérez",
+                    "edad": 38
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Julián Fernández",
+                    "edad": 29
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Angelo Martino",
+                    "edad": 25
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Rodrigo Fernández",
+                    "edad": 28
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Jerónimo Cacciabue",
+                    "edad": 26
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Matko Miljevic",
+                    "edad": 22
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Franco Diaz",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Esteban Fernández",
+                    "edad": 22
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Ignacio Schor",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Guillermo Balzi",
+                    "edad": 22
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "David Sotelo",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Giovani Chiaverano",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Fabricio Tirado",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Guillermo May",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Juan Ramírez",
+                    "edad": 27
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Brian Aguirre",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Francisco González",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Misael Jaime",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Jeremías Pérez Tica",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Julián Contrera",
+                    "edad": 20
+                },
+                {
+                    "numero": "DT",
+                    "nombre": "Mauricio Larriera",
+                    "edad": null
+                }
+            ],
+            "playersTitular": {
+                "arquero": {
+                    "name": "Macagno",
+                    "img": "https://img.a.transfermarkt.technology/portrait/medium/401913-1635921056.JPG?lm=1",
+                    "number": 12
+                },
+                "defensores": [
+                    {
+                        "name": "Calderara",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/830111-1646482325.JPG?lm=1",
+                        "number": 16
+                    },
+                    {
+                        "name": "Velázquez",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/389399-1677161409.JPG?lm=1",
+                        "number": 25
+                    },
+                    {
+                        "name": "Jacob",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/950131-1635922505.JPG?lm=1",
+                        "number": 55
+                    },
+                    {
+                        "name": "Schott",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/670566-1645448856.JPG?lm=1",
+                        "number": 4
+                    }
+                ],
+                "mediocampo": [
+                    {
+                        "name": "Balzi",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/896234-1660827203.JPG?lm=1",
+                        "number": 47
+                    },
+                    {
+                        "name": "Banega",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/12249-1685910960.jpg?lm=1",
+                        "number": 10
+                    },
+                    {
+                        "name": "Aguirre",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/668549-1674736123.JPG?lm=1",
+                        "number": 18
+                    },
+                    {
+                        "name": "Méndez",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/605648-1644587126.JPG?lm=1",
+                        "number": 47
+                    }
+                ],
+                "delantero": [
+                    {
+                        "name": "Ramírez",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/402079-1696272495.jpg?lm=1",
+                        "number": 36
+                    },
+                    {
+                        "name": "May",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/479718-1683119598.JPG?lm=1",
+                        "number": 9
+                    }
+                ]
+            },
             "Internacionales": [],
             "titulosInternacionales": [],
             "coloresPrincipales": [
@@ -230,6 +1290,11 @@
             "capacidad": 70000,
             "fundacion": 1901,
             "FechaInauguración": "25 DE MAYO DE 1938",
+            "Apodo": "Millonarios / Gallinas",
+            "Colores": "Blanco y Rojo",
+            "Rivalidades": "Boca Juniors",
+            "Hinchada": "Los Borrachos del Tablón",
+            "Lugar": "Barrio de Núñez",
             "mapa": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3983.812232016029!2d-58.449996!3d-34.545347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae5dde0ed%3A0x79bbb6038fd01b0c!2sClub%20Atl%C3%A9tico%20River%20Plate!5e1!3m2!1ses!2sus!4v1695726356704!5m2!1ses!2sus",
             "PrimeraDivision": [
                 "1920 AmF",
@@ -271,6 +1336,261 @@
                 "2021",
                 "2023"
             ],
+            "plantel": [
+                {
+                    "numero": "ARQ",
+                    "nombre": "Franco Armani",
+                    "edad": 37
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Ezequiel Centurión",
+                    "edad": 26
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Lucas Lavagnino",
+                    "edad": 19
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Santiago Beltrán",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Milton Casco",
+                    "edad": 36
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Leandro González Pirez",
+                    "edad": 32
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Ramiro Funes Mori",
+                    "edad": 33
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Paulo Díaz",
+                    "edad": 29
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Héctor Martínez",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Agustín SantAnna",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Marcelo Herrera",
+                    "edad": 25
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Sebastián Boselli",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Gonzalo Trindade",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Daniel Zabala",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Lautaro Rivero",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Manuel Lanzini",
+                    "edad": 31
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Ignacio Fernández",
+                    "edad": 34
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Matías Kranevitter",
+                    "edad": 30
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Gonzalo Martínez",
+                    "edad": 30
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Rodrigo Aliendro",
+                    "edad": 33
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Ezequiel Barco",
+                    "edad": 25
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Enzo Díaz",
+                    "edad": 28
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Agustín Palavecino",
+                    "edad": 27
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Nicolás Fonseca",
+                    "edad": 25
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Santiago Simon",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Rodrigo Villagra",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Claudio Echeverri",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Jonás Luna",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Alexis González",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Franco Mastantuono",
+                    "edad": 16
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Tobías Leiva",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Miguel Borja",
+                    "edad": 31
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Facundo Colidio",
+                    "edad": 24
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Pablo Solari",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Agustín Ruberto",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Ian Subiabre",
+                    "edad": 17
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Tomás Nasif",
+                    "edad": 20
+                },
+                {
+                    "numero": "DT",
+                    "nombre": "Martín Demichelis",
+                    "edad": 43
+                }
+            ],
+            "playersTitular": {
+                "arquero": {
+                    "name": "Armani",
+                    "img": "https://img.a.transfermarkt.technology/portrait/medium/119634-1625760128.png?lm=1",
+                    "number": 1
+                },
+                "defensores": [
+                    {
+                        "name": "E.Díaz",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/540458-1693314874.png?lm=1",
+                        "number": 13
+                    },
+                    {
+                        "name": "P.Díaz",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/271478-1625770264.png?lm=1",
+                        "number": 17
+                    },
+                    {
+                        "name": "Pirez",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/113130-1644878036.png?lm=1",
+                        "number": 14
+                    },
+                    {
+                        "name": "Herrera",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/621369-1644878001.png?lm=1",
+                        "number": 15
+                    }
+                ],
+                "mediocampo": [
+                    {
+                        "name": "Aliendro",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/424045-1693315106.png?lm=1",
+                        "number": 29
+                    },
+                    {
+                        "name": "Echeverri",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/994536-1694001438.png?lm=1",
+                        "number": 19
+                    },
+                    {
+                        "name": "Barco",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/456623-1618606445.JPG?lm=1",
+                        "number": 21
+                    },
+                    {
+                        "name": "Fernández",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/50669-1693315048.png?lm=1",
+                        "number": 26
+                    }
+                ],
+                "delantero": [
+                    {
+                        "name": "Borja",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/211397-1693315161.png?lm=1",
+                        "number": 9
+                    },
+                    {
+                        "name": "Colidio",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/491705-1693315193.png?lm=1",
+                        "number": 11
+                    }
+                ]
+            },
             "Internacionales": [
                 "Libertadores 1986",
                 "Intercontinental 1986",
@@ -286,8 +1606,8 @@
                 "Recopa 2019"
             ],
             "coloresPrincipales": [
-                "#E2001A",
                 "#FFFFFF",
+                "#E2001A",
                 "#000000"
             ],
             "titulosNacionales": [
@@ -314,6 +1634,268 @@
             "cancha": "Estadio Juan Domingo Perón",
             "capacidad": 53000,
             "fundacion": 1903,
+            "Apodo": "La Academia",
+            "Colores": "Celeste y Blanco",
+            "Rivalidades": "Independiente",
+            "Hinchada": " La Guardia Imperial",
+            "Lugar": "Avellaneda",
+            "plantel": [
+                {
+                    "numero": "ARQ",
+                    "nombre": "Gabriel Arias",
+                    "edad": 36
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Facundo Cambeses",
+                    "edad": 27
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Roberto Leon",
+                    "edad": 22
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Francisco Gómez",
+                    "edad": 20
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Thiago De Bellis",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Leonardo Sigali",
+                    "edad": 36
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Iván Pillud",
+                    "edad": 38
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Germán Conti",
+                    "edad": 29
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Agustín García Basso",
+                    "edad": 32
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Gabriel Rojas",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Nazareno Colombo",
+                    "edad": 25
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Facundo Mura",
+                    "edad": 25
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Marco Di Cesare",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Gastón Martirena",
+                    "edad": 24
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Ignacio Galván",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Tobías Rubio",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Valentín Gelos",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Santiago Quirós",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Axel Cabellos",
+                    "edad": 17
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Gonzalo Escudero",
+                    "edad": 17
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Galo Volpe",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Samir Meza",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Cristian Núñez",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Jhoan Merino",
+                    "edad": 17
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Bruno Zuculini",
+                    "edad": 31
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Juan Quintero",
+                    "edad": 31
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Leonel Miranda",
+                    "edad": 30
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Santiago Sosa",
+                    "edad": 24
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Agustín Almendra",
+                    "edad": 24
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Juan Nardoni",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Milton Cantero",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Baltasar Rodriguez",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Felipe Schaare",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Gonzalo Sosa",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Santino Vera",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "David González",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Pedro Paredes",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Alexis Arrúa",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Roger Martínez",
+                    "edad": 29
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Maximiliano Salas",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Adrián Martínez",
+                    "edad": 31
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Johan Carbonero",
+                    "edad": 24
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Agustín Urzi",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Santiago Solari",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Nicolás Meaurio",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Roman Fernández",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Ramiro Degregorio",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Tomás Pérez",
+                    "edad": 17
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Agustín Urrutia",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Francisco Fraga",
+                    "edad": 18
+                },
+                {
+                    "numero": "DT",
+                    "nombre": "Gustavo Costas",
+                    "edad": 61
+                }
+            ],
             "FechaInauguración": "3 DE SEPTIEMBRE DE 1950",
             "PrimeraDivision": [
                 "1913 AAF",
@@ -335,6 +1917,69 @@
                 "2014 TR",
                 "2018/19"
             ],
+            "playersTitular": {
+                "arquero": {
+                    "name": "Arias",
+                    "img": "https://img.a.transfermarkt.technology/portrait/medium/54330-1694003785.JPG?lm=1",
+                    "number": 21
+                },
+                "defensores": [
+                    {
+                        "name": "Rojas",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/471639-1694004104.JPG?lm=1",
+                        "number": 27
+                    },
+                    {
+                        "name": "Conti",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/284321-1690122228.png?lm=1",
+                        "number": 20
+                    },
+                    {
+                        "name": "Sigali",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/54570-1694003828.JPG?lm=1",
+                        "number": 30
+                    },
+                    {
+                        "name": "Martirena",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/744324-1683117294.JPG?lm=1",
+                        "number": 15
+                    }
+                ],
+                "mediocampo": [
+                    {
+                        "name": "Solari",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/866059-1677163643.JPG?lm=1",
+                        "number": 28
+                    },
+                    {
+                        "name": "Sosa",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/576026-1678216970.jpg?lm=1",
+                        "number": 13
+                    },
+                    {
+                        "name": "Quitero",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/122582-1644877928.png?lm=1",
+                        "number": 8
+                    },
+                    {
+                        "name": "Miranda",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/259246-1637605250.JPG?lm=1",
+                        "number": 19
+                    }
+                ],
+                "delantero": [
+                    {
+                        "name": "Martínez",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/598769-1695640829.JPG?lm=1",
+                        "number": 9
+                    },
+                    {
+                        "name": "Salas",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/442231-1686313030.JPG?lm=1",
+                        "number": 7
+                    }
+                ]
+            },
             "titulosNacionales": [
                 "Copa de Honor 1912",
                 "Copa de Honor 1913",
@@ -369,6 +2014,253 @@
             "cancha": "Estadio Jorge Luis Hirschi",
             "capacidad": 26000,
             "fundacion": 1905,
+            "Apodo": "El Pincha",
+            "Colores": "Rojo y Blanco",
+            "Rivalidades": "Gimnasia y Esgrima La Plata",
+            "Hinchada": "La Banda del León",
+            "Lugar": "La Plata",
+            "plantel": [
+                {
+                    "numero": "ARQ",
+                    "nombre": "Juan Zozaya",
+                    "edad": 22
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Matias Mansilla",
+                    "edad": 28
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Fabricio Iacovich",
+                    "edad": 22
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Rodrigo Borzone",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Federico Fernández",
+                    "edad": 35
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Luciano Lollo",
+                    "edad": 37
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Eric Meza",
+                    "edad": 25
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Zaid Romero",
+                    "edad": 24
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Gastón Benedetti",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Santiago Flores",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Eros Mancuso",
+                    "edad": 25
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Juan Arango",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Nicolas Fernandez",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Valente Pierani",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Román Gómez",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Joaquín Pereyra",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Matías Magdaleno",
+                    "edad": 17
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "José Sosa",
+                    "edad": 38
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Pablo Piatti",
+                    "edad": 35
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Enzo Pérez",
+                    "edad": 38
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Fernando Zuqui",
+                    "edad": 32
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Santiago Ascacibar",
+                    "edad": 27
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Javier Altamirano",
+                    "edad": 24
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Bautista Kociubinski",
+                    "edad": 22
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Franco Zapiola",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Alexis Manyoma",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Nehuén Benedetti",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Axel Atum",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Fabricio Amato",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Mikel Amondarain",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Emanuel DallAglio",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Rodrigo González",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Lucas Cornejo",
+                    "edad": 19
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Franco Basualdo",
+                    "edad": 17
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Guido Carrillo",
+                    "edad": 32
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Javier Correa",
+                    "edad": 31
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Edwin Cetré",
+                    "edad": 26
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Mauro Méndez",
+                    "edad": 25
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Tiago Palacios",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Ezequiel Naya",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Juan Ignacio Quattrocchi",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Fabricio Pérez",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Joaquín Tobio Burgos",
+                    "edad": 19
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Luca Landriel",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Matías Contrera",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Faustino Messina",
+                    "edad": 17
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Benjamín Sagues",
+                    "edad": 17
+                },
+                {
+                    "numero": "DT",
+                    "nombre": "Eduardo Domínguez",
+                    "edad": 45
+                }
+            ],
             "mapa": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.1874609729057!2d-57.938972!3d-34.91184100000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e61621b73869%3A0x32c529fe42daaa5d!2sEstadio%20UNO%20Jorge%20Luis%20Hirschi!5e1!3m2!1ses!2sus!4v1695726781220!5m2!1ses!2sus",
             "FechaInauguración": "2005 (Reinauguración)",
             "PrimeraDivision": [
@@ -379,6 +2271,69 @@
                 "2006 AP",
                 "2010 AP"
             ],
+            "playersTitular": {
+                "arquero": {
+                    "name": "Mansilla",
+                    "img": "https://img.a.transfermarkt.technology/portrait/medium/731722-1638747409.JPG?lm=1",
+                    "number": 12
+                },
+                "defensores": [
+                    {
+                        "name": "Mancuso",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/888545-1706529917.JPG?lm=1",
+                        "number": 14
+                    },
+                    {
+                        "name": "Romero",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/741142-1675697927.JPG?lm=1",
+                        "number": 2
+                    },
+                    {
+                        "name": "Fernández",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/85475-1520418021.jpg?lm=1",
+                        "number": 6
+                    },
+                    {
+                        "name": "Meza",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/830857-1637603918.JPG?lm=1",
+                        "number": 20
+                    }
+                ],
+                "mediocampo": [
+                    {
+                        "name": "Cetré",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/470390-1616957377.jpg?lm=1",
+                        "number": 18
+                    },
+                    {
+                        "name": "Zuqui",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/248763-1636585115.JPG?lm=1",
+                        "number": 8
+                    },
+                    {
+                        "name": "Pérez",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/56066-1625771376.png?lm=1",
+                        "number": 22
+                    },
+                    {
+                        "name": "Ascacibar",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/423436-1663684499.jpg?lm=1",
+                        "number": 5
+                    }
+                ],
+                "delantero": [
+                    {
+                        "name": "Correa",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/130413-1637605535.JPG?lm=1",
+                        "number": 9
+                    },
+                    {
+                        "name": "Carrillo",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/184672-1541162746.jpg?lm=1",
+                        "number": 10
+                    }
+                ]
+            },
             "titulosNacionales": [
                 "Copa Escobar 1944",
                 "Copa Republica 1945"
@@ -405,6 +2360,11 @@
             "mapa": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2030.1373666791785!2d-60.674459000000006!3d-32.91404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b654a08896e0f7%3A0x4ee98cd74ab24d07!2sEstadio%20Gigante%20de%20Arroyito!5e1!3m2!1ses!2sus!4v1695726898835!5m2!1ses!2sus",
             "fundacion": 1889,
             "FechaInauguración": "1929 (Reinauguración)",
+            "Apodo": "Los Canallas",
+            "Colores": "Amarillo y Azul",
+            "Rivalidades": "Newell's Old Boys",
+            "Hinchada": "Canallas",
+            "Lugar": "Rosario, Santa Fe",
             "titulosNacionales": [
                 "Copa Competencia 1913",
                 "Copa Ibarguren 1915",
@@ -422,6 +2382,331 @@
             "Internacionales": [
                 "Conmebol 1995"
             ],
+            "plantel": [
+                {
+                    "numero": "ARQ",
+                    "nombre": "Jorge Broun",
+                    "edad": 37
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Axel Werner",
+                    "edad": 28
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Valentino Quintero",
+                    "edad": 21
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Lucas Cuevas",
+                    "edad": 21
+                },
+                {
+                    "numero": "ARQ",
+                    "nombre": "Damian Fernandez",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Carlos Quintana",
+                    "edad": 36
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Damián Martínez",
+                    "edad": 34
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Juan Cruz Komar",
+                    "edad": 27
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Facundo Mallo",
+                    "edad": 29
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Emanuel Coronel",
+                    "edad": 27
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Alan Rodríguez",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Agustín Bravo",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Agustín Sandez",
+                    "edad": 23
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Juan Giménez",
+                    "edad": 17
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Santiago Burgos",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEF",
+                    "nombre": "Leonardo Ruiz",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Jonathan Gómez",
+                    "edad": 34
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Mauricio Martínez",
+                    "edad": 31
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Ignacio Malcorra",
+                    "edad": 36
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Francis MacAllister",
+                    "edad": 28
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Giovanni Bogado",
+                    "edad": 22
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Jaminton Campaz",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Francesco Lo Celso",
+                    "edad": 24
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Franco Ibarra",
+                    "edad": 22
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Lautaro Giaccone",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Dannovi Quinones",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Ramiro Peralta",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Kevin Ortíz",
+                    "edad": 23
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Kevin Gutiérrez",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Tomas OConnor",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Fabricio Oviedo",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Carlos Campos",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Agustín Módica",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Luca Raffin",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Elías Ocampo",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Samuel Beltrán",
+                    "edad": 20
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Santiago Segovia",
+                    "edad": 17
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Tomás Salteño",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Gaspar Duarte",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Giovanni Cantizano",
+                    "edad": 17
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Felipe Carnicero",
+                    "edad": 18
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Pedro Garcia",
+                    "edad": 21
+                },
+                {
+                    "numero": "MED",
+                    "nombre": "Ignacio Moreno",
+                    "edad": 18
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Abel Hernández",
+                    "edad": 33
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Maximiliano Lovera",
+                    "edad": 25
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Tobias Cervera",
+                    "edad": 21
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Luca Martinez Dupuy",
+                    "edad": 22
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Juan Cruz Cerrudo",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Cristian Bonesso",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Lorenzo Moscoloni",
+                    "edad": 20
+                },
+                {
+                    "numero": "DEL",
+                    "nombre": "Thiago Ponce",
+                    "edad": 19
+                },
+                {
+                    "numero": "DT",
+                    "nombre": "Miguel Ángel Russo",
+                    "edad": 68
+                }
+            ],
+            "playersTitular": {
+                "arquero": {
+                    "name": "Broun",
+                    "img": "https://img.a.transfermarkt.technology/portrait/medium/55150-1648631444.png?lm=1",
+                    "number": 1
+                },
+                "defensores": [
+                    {
+                        "name": "Sandez",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/847023-1633537377.JPG?lm=1",
+                        "number": 3
+                    },
+                    {
+                        "name": "Quintana",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/54596-1636129595.JPG?lm=1",
+                        "number": 2
+                    },
+                    {
+                        "name": "Mallo",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/347193-1675696821.JPG?lm=1",
+                        "number": 15
+                    },
+                    {
+                        "name": "Coronel",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/565194-1637343791.JPG?lm=1",
+                        "number": 33
+                    }
+                ],
+                "mediocampo": [
+                    {
+                        "name": "Campaz",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/491553-1610461558.jpg?lm=1",
+                        "number": 13
+                    },
+                    {
+                        "name": "OConnor",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/1027880-1695216890.JPG?lm=1",
+                        "number": 30
+                    },
+                    {
+                        "name": "Ibarra",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/741685-1678216649.jpg?lm=1",
+                        "number": 8
+                    },
+                    {
+                        "name": "Lovera",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/441422-1596528025.jpg?lm=1",
+                        "number": 7
+                    }
+                ],
+                "delantero": [
+                    {
+                        "name": "Cervera",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/1029814-1695216936.JPG?lm=1",
+                        "number": 9
+                    },
+                    {
+                        "name": "Malcorra",
+                        "img": "https://img.a.transfermarkt.technology/portrait/medium/87518-1637255578.JPG?lm=1",
+                        "number": 10
+                    }
+                ]
+            },
             "coloresPrincipales": [
                 "#FFFF00",
                 "#0400ff"

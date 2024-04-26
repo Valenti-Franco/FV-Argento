@@ -33,27 +33,25 @@ body {
   -webkit-transform: rotateX(-10deg);
   transform: rotateX(-10deg);
 }
-.swiper-slide{
+/* .swiper-slide{
   height: 40% !important;
-}
+} */
 .swiper-slide-active  {
   transform: scale(1.2) translateY(40%) !important;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+  -webkit-box-reflect: below -10vh linear-gradient(transparent, transparent, #0005);
   padding: 10%;
-  /* display: flex; */
-  /* width: 300px; */
-  max-width: 70%;
-  max-height: 70%;
-  /* height: 300px; */
-  /* border: 5px solid #000000; */
+
+  /* max-width: 70%;
+  max-height: 70%; */
+
   align-items: center;
   filter: brightness(1) !important;
 
   
   
 
-
 }
+
 
 .swiper-slide {
   filter: brightness(0.2) ;
@@ -94,7 +92,35 @@ transform: scale(0.7) translate(-50%, -20%) rotateY(-70deg) !important;
   transform: rotateX(-10deg);
 
 }
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
 
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
 #drag-container img,
 #drag-container video {
   -webkit-transform-style: preserve-3d;
@@ -102,7 +128,7 @@ transform: scale(0.7) translate(-50%, -20%) rotateY(-70deg) !important;
   /* position: absolute; */
   left: 0;
   top: 0;
-  
+  object-fit: contain;
   width: 100;
   height: 30vh;
   line-height: 200px;
@@ -134,7 +160,7 @@ transform: scale(0.7) translate(-50%, -20%) rotateY(-70deg) !important;
 
 #ground {
   width: 100vw;
-  height: 900px;
+  height: 130vh;
   position: absolute;
   border-radius: 50% 50% 0 0;
   border: 1px solid;
@@ -142,7 +168,6 @@ transform: scale(0.7) translate(-50%, -20%) rotateY(-70deg) !important;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) rotateX(90deg);
   transform: translate(-50%, -50%) rotateX(90deg);
-  border-top: 10px solid #fff;
   transition: all 1s;
   z-index: 10;
 
@@ -156,7 +181,6 @@ transform: scale(0.7) translate(-50%, -20%) rotateY(-70deg) !important;
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%) rotateX(230deg);
-  border-top: 2px solid #fff;
   transition: all 1s;
   z-index: 10;
 }
@@ -223,10 +247,9 @@ transform: scale(0.7) translate(-50%, -20%) rotateY(-70deg) !important;
   height: 1200px;
   position: absolute;
   /* border-radius: 50% 50% 0% 0; */
-  border: 15px solid;
-  top: 200%;
+  top: 185%;
   left: 50%;
-  -webkit-transform: translate(-20%, 20%) rotateZ(90deg);
+  -webkit-transform: translate(-20%, 20%) rotateZ(80deg);
   transform: translate(-50%, -100%) rotateZ(0deg);
   background: -webkit-radial-gradient( center center, #000000f6, #000000cf, rgb(0, 0, 0) );
 z-index: -1;
@@ -300,33 +323,21 @@ z-index: -1;
     transform: rotateX(-10deg);
 }
   #ground {
-    width: 100vw;
-    height: 900px;
-    position: absolute;
-    border-radius: 50% 50% 0 0;
-    border: 1px solid;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateX(90deg);
-    border-top: 10px solid #fff;
-    transition: all 1s;
-    z-index: 10;
+    
+    height: 1100px;
+    
   }
 
   .swiper-slide-active {
-    transform: scale(1.2) translateY(40%) !important;
-    -webkit-box-reflect: below 5vh linear-gradient(transparent, transparent, #0005);
-    padding: 10%;
-    /* display: flex; */
-    /* width: 300px; */
-    max-width: 70%;
-    max-height: 70%;
-    /* height: 300px; */
-    /* border: 5px solid #000000; */
+    transform: scale(1.1) translateY(40%) !important;
+ 
+    -webkit-box-reflect: inherit;
+    -webkit-box-reflect: initial;
+    -webkit-box-reflect: unset;
     align-items: center;
 }
 
-#ground1 {
+/* #ground1 {
   width: 100vw;
   height: 900px;
   position: absolute;
@@ -338,7 +349,7 @@ z-index: -1;
   border-top: 2px solid #fff;
   transition: all 1s;
   z-index: 10;
-}
+} */
 
 
 }
@@ -350,7 +361,7 @@ z-index: -1;
     position: absolute;
     border-radius: 50% 50% 0 0;
     border: 1px solid;
-    top: -50%;
+    top: -25%;
     left: 50%;
     transform: translate(-50%, -50%) rotateX(250deg);
     border-top: 2px solid #fff;

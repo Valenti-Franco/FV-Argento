@@ -5,21 +5,43 @@
     
     
 }
+.img{
+    object-fit: contain;
+    height: 400px;
+    width: auto !important;
+}
 .ContainerEscudos{
     width: 40%;
     margin: auto;
     height: 100vh;
     display: flex;
-    /* padding: 50px; */
-    /* padding-top: 190px; */
-    /* position: absolute; */
-    /* padding-top: 150px; */
     left: -1vw;
     flex-direction: row;
     justify-content: center;
     margin-top: 3vw;
     align-items: center;
     
+}
+.containerArrow{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+.arrow{
+    margin: 30vh 0px;
+    width: 10vw;
+    min-width: 100px;
+    border-radius: 100%;
+    transition: all 0.3s;
+    background-color: rgba(0, 0, 0, 0.493);
+
+}
+.arrow:hover{
+    filter: drop-shadow(1px 1px 10px #000);
+    background-color: rgba(0, 0, 0, 0.932);
+    transition: background-color 0.25s;
+    cursor: pointer;
 }
 .ContainerRow{
     max-width: 9vw;
@@ -42,11 +64,12 @@
     transition: box-shadow .1s, transform .1s;
 }
 .itemImgSelect{
-    max-width: 400px;
-    max-height: 400px;
+    object-fit: contain;
+    max-width: 200px;
+    max-height: 200px;
     position: relative;
-    width: 100%;
-    margin: 50px;
+    /* width: 20vw; */
+    margin: 0px;
     z-index: 1000000;
     transition: box-shadow .1s, transform .1s;
 
@@ -55,27 +78,32 @@
     position: absolute;
     bottom: 0;
 }
-/* .containerEscudo{
-    height: 500vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-} */
 
-/* @media (min-height: 1268px) {
-    .ContainerEscudos {
+
+ @media (max-width: 1268px) {
+    .containerArrow{
         display: flex;
-        flex-direction: column;
-        max-height: 500px;
-        align-items: center;
-        align-content: space-around;
-        flex-wrap: wrap;
-        align-self: end;
+        justify-content: center;
+        align-items: flex-end;
+    
+    }
+    .arrow{
+        margin: 80px 20px;
+    }
+    .itemImgSelect{
+        object-fit: contain;
+        max-width: 150px;
+        max-height: 150px;
+        position: relative;
         width: 100%;
+        margin: 0px;
+        z-index: 1000000;
+        transition: box-shadow .1s, transform .1s;
+    
     }
     
 }
-
+/*
 @media (max-width:900px) {
     .ContainerEscudos{
         display: flex;
