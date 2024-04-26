@@ -119,6 +119,7 @@
     background-color: #444;
 }
 .button{
+    align-items: center;
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
@@ -159,6 +160,7 @@
         align-items: space-between;
         display: flex;
         flex-direction: row;
+        /* align-items: center; */
         justify-content: space-around;
         background-color: #1a1a1a;
         border-radius: 25px 25px 0px 0px;
