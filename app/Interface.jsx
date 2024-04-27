@@ -620,6 +620,7 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                       </div>
 
                       <Modal
+                        className="dark text-white"
                         scrollBehavior={"inside"}
                         isOpen={isOpen}
                         onOpenChange={onOpenChange}

@@ -101,7 +101,7 @@
 .menu{
     position: fixed;
     bottom: calc(50vh - 127px);
-
+    contain: content;
     width: 80px;
     right: 50px;
     height: 250px;
