@@ -7,6 +7,7 @@ import style from "./interface.module.css";
 import json from "../public/info.json";
 import liga from "../public/liga.png";
 import campo from "../public/campo.webp";
+import logo from "../public/logo.webp";
 
 // import { GoogleMap } from "react-google-maps";
 import dynamic from "next/dynamic";
@@ -17,6 +18,7 @@ import {
   Button,
   Card,
   CardBody,
+  CardHeader,
   Divider,
   Modal,
   ModalBody,
@@ -39,8 +41,6 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import Shirts from "./Shirts";
-// const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
-// import Chart from "react-apexcharts";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -51,18 +51,8 @@ const lato = Lato({
 const Section = (props) => {
   const { children } = props;
   const ref = useRef(null);
-  // const isInView = useInView(ref, { once: true });
   return (
-    <section
-      ref={ref}
-      className={lato.className}
-      // style={{
-      //   ...sectionStyle,
-      //   transform: isInView ? "none" : "translateX(-200px)",
-      //   opacity: isInView ? 1 : 0,
-      //   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      // }}
-    >
+    <section ref={ref} className={lato.className}>
       {children}
     </section>
   );
@@ -75,7 +65,7 @@ const containerStyle = {
   height: "100vh",
 };
 
-const Interface = ({ section, Escudo, setSection, noText }) => {
+const Interface = ({ section, Escudo, setSection, noText, setNoText }) => {
   Escudo = Escudo.id;
 
   const equipoInfo = json.equipos.find((equipo) => equipo.nombre === Escudo);
@@ -87,7 +77,17 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
   };
   const [selected, setSelected] = React.useState("photos");
   const ruta = `../assets/img/escudos/${Escudo}.png`;
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const {
+    isOpen: isOpen1,
+    onOpen: onOpen1,
+    onOpenChange: onOpenChange1,
+  } = useDisclosure();
+
+  const {
+    isOpen: isOpen2,
+    onOpen: onOpen2,
+    onOpenChange: onOpenChange2,
+  } = useDisclosure();
   return (
     <div className="dark" style={containerStyle}>
       <AnimatePresence>
@@ -102,6 +102,38 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                   // transition={spring}
                   className={style.contCancha}
                 >
+                  <button
+                    className=" absolute right-0"
+                    onClick={() => setNoText(!noText)}
+                  >
+                    <Tooltip showArrow={true} content="Cerrar">
+                      <svg
+                        width="34px"
+                        height="34px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        stroke="#ffffff"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          {" "}
+                          <path
+                            d="M5 12H19M5 12L11 6M5 12L11 18"
+                            stroke="#fff"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>{" "}
+                        </g>
+                      </svg>
+                    </Tooltip>
+                  </button>
                   <Tabs
                     className="  w-max self-center  "
                     aria-label="Options"
@@ -586,35 +618,9 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                                 </p>
                               </div>
                             </div>
-                            {/* <div className="w-12  relative h-12 flex justify-center items-center">
-                              <svg
-                                // className="w-12 h-12"
-                                viewBox="0 0 24 24"
-                                fill="#222"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g
-                                  id="SVGRepo_tracerCarrier"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                ></g>
-                                <g id="SVGRepo_iconCarrier">
-                                  {" "}
-                                  <path
-                                    d="M3 7L6 4H9C9 4.39397 9.0776 4.78407 9.22836 5.14805C9.37913 5.51203 9.6001 5.84274 9.87868 6.12132C10.1573 6.3999 10.488 6.62087 10.8519 6.77164C11.2159 6.9224 11.606 7 12 7C12.394 7 12.7841 6.9224 13.1481 6.77164C13.512 6.62087 13.8427 6.3999 14.1213 6.12132C14.3999 5.84274 14.6209 5.51203 14.7716 5.14805C14.9224 4.78407 15 4.39397 15 4H18L21 7L20.5 12L18 10.5V20H6V10.5L3.5 12L3 7Z"
-                                    stroke="#000000"
-                                    stroke-width="1.5"
-                                    stroke-linecap="square"
-                                    stroke-linejoin="round"
-                                  ></path>{" "}
-                                </g>
-                              </svg>
-                              <p className=" absolute">3</p>
-                            </div> */}
                           </div>
                         </div>
-                        <Button color="primary" onPress={onOpen}>
+                        <Button color="primary" onPress={onOpen2}>
                           Ver Todo el Plantel
                         </Button>
                       </div>
@@ -622,11 +628,11 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                       <Modal
                         className="dark text-white"
                         scrollBehavior={"inside"}
-                        isOpen={isOpen}
-                        onOpenChange={onOpenChange}
+                        isOpen={isOpen2}
+                        onOpenChange={onOpenChange2}
                       >
                         <ModalContent>
-                          {(onClose) => (
+                          {(onClose2) => (
                             <>
                               <ModalHeader className="flex flex-col gap-1">
                                 Plantel de {equipoInfo.nombreCompleto}
@@ -666,7 +672,7 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                                 <Button
                                   color="danger"
                                   variant="light"
-                                  onPress={onClose}
+                                  onPress={onClose2}
                                 >
                                   Close
                                 </Button>
@@ -675,6 +681,39 @@ const Interface = ({ section, Escudo, setSection, noText }) => {
                           )}
                         </ModalContent>
                       </Modal>
+                    </Tab>
+                    <Tab
+                      className=" w-full h-full z-10  "
+                      key="info"
+                      title="Info"
+                    >
+                      <Card className=" bg-transparent">
+                        <CardHeader className=" bg-transparent text-white flex flex-col gap-1">
+                          FV Argento
+                        </CardHeader>
+                        <CardBody className=" h-dvh   pb-40 md:pb-0  overflow-y-auto">
+                          <img src={logo.src} alt="" />
+                          <div className="text-white text-lg">
+                            <b>Bienvenidos a FV Argento</b>
+                            la plataforma definitiva para los fanáticos del
+                            fútbol argentino. Con ocho equipos icónicos:
+                            <p>
+                              <ul className=" list-disc">
+                                <li>Newells old Boys</li>
+                                <li>Central</li>
+                                <li>San Lorenzo</li>
+                                <li>Boca</li>
+                                <li>River</li>
+                                <li>Racing</li>
+                                <li>Independiente</li>
+                                <li>Estudiantes</li>
+                              </ul>
+                            </p>
+                            Este proyecto está diseñado con NextJS y Three.js
+                            para una experiencia visualmente impresionante.
+                          </div>
+                        </CardBody>
+                      </Card>
                     </Tab>
                   </Tabs>
                 </motion.div>

@@ -18,6 +18,7 @@ import { framerMotionConfig } from "./config";
 import gsap from "gsap";
 
 const Experience = ({
+  isOrbit,
   Escudo,
   section,
   setSection,
@@ -304,20 +305,22 @@ const Experience = ({
       }
       setSection(0);
     }
+    // // Configurar la posición y el punto de mira para la sección 0
 
-    // Configurar la posición y el punto de mira para la sección 0
-    state.camera.position.x = cameraPositionX.get();
-    state.camera.position.y = cameraPositionY.get();
-    state.camera.position.z = cameraPositionZ.get();
-    state.camera.rotation.z = cameraRotationZ.get();
-    state.camera.rotation.x = cameraRotationX.get();
-    state.camera.rotation.y = cameraRotationY.get();
-    // state.camera = camera.get();
-    // state.camera.lookAt(cameraLookAtX.get(), -1, 22);
+    if (!isOrbit) {
+      state.camera.position.x = cameraPositionX.get();
+      state.camera.position.y = cameraPositionY.get();
+      state.camera.position.z = cameraPositionZ.get();
+      state.camera.rotation.z = cameraRotationZ.get();
+      state.camera.rotation.x = cameraRotationX.get();
+      state.camera.rotation.y = cameraRotationY.get();
+    }
 
-    // Restaurar el zoom a su valor predeterminado para otras secciones diferentes de 1
-    state.camera.zoom = 1;
-    state.camera.updateProjectionMatrix();
+    // // state.camera = camera.get();
+    // // state.camera.lookAt(cameraLookAtX.get(), -1, 22);
+    // // Restaurar el zoom a su valor predeterminado para otras secciones diferentes de 1
+    // state.camera.zoom = 1;
+    // state.camera.updateProjectionMatrix();
   });
   return (
     <>
