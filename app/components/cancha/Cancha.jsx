@@ -59,7 +59,7 @@ const Cancha = () => {
         id={"container" + Escudo.id}
         // className={style.Escudos}
       ></div> */}
-      <div style={{ width: "100%", height: "100vh" }}>
+      <div style={{ width: "100%", height: "100dvh" }}>
         <Canvas camera={{ zoom: 1, position: [25, 10, 5] }}>
           {isOrbit && (
             <OrbitControls
