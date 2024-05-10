@@ -694,7 +694,10 @@ const Interface = ({ section, Escudo, setSection, noText, setNoText }) => {
                         <CardBody className=" h-dvh   pb-40 md:pb-0  overflow-y-auto">
                           <img src={logo.src} alt="" />
                           <div className="text-white text-lg">
-                            <b>Bienvenidos a FV Argento</b>
+                            <p>
+                              {" "}
+                              <b>Bienvenidos a FV Argento </b>
+                            </p>
                             la plataforma definitiva para los fanáticos del
                             fútbol argentino. Con ocho equipos icónicos:
                             <p>
