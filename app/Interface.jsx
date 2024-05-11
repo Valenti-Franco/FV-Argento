@@ -41,6 +41,7 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import Shirts from "./Shirts";
+import Image from "next/image";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -688,29 +689,33 @@ const Interface = ({ section, Escudo, setSection, noText, setNoText }) => {
                       title="Info"
                     >
                       <Card className=" bg-transparent">
-                        <CardHeader className=" bg-transparent text-white flex flex-col gap-1">
+                        <CardHeader className=" bg-transparent text-2xl text-white flex flex-col gap-1">
                           FV Argento
                         </CardHeader>
                         <CardBody className=" h-dvh   pb-40 md:pb-0  overflow-y-auto">
-                          <img src={logo.src} alt="" />
+                          <Image
+                            width={400}
+                            height={400}
+                            src={logo.src}
+                            alt=""
+                          />
                           <div className="text-white text-lg">
                             <p>
                               {" "}
                               <b>Bienvenidos a FV Argento </b>
                             </p>
-                            la plataforma definitiva para los fanáticos del
-                            fútbol argentino. Con ocho equipos icónicos:
+                            La plataforma definitiva para los fanáticos del
+                            fútbol argentino.
                             <p>
-                              <ul className=" list-disc">
-                                <li>Newells old Boys</li>
-                                <li>Central</li>
-                                <li>San Lorenzo</li>
-                                <li>Boca</li>
-                                <li>River</li>
-                                <li>Racing</li>
-                                <li>Independiente</li>
-                                <li>Estudiantes</li>
-                              </ul>
+                              Con ocho equipos icónicos:
+                              <b> Newells old Boys, </b>
+                              <b>Central, </b>
+                              <b>San Lorenzo, </b>
+                              <b>Boca, </b>
+                              <b>River, </b>
+                              <b>Racing, </b>
+                              <b>Independiente, </b>
+                              <b>Estudiantes. </b>
                             </p>
                             Este proyecto está diseñado con NextJS y Three.js
                             para una experiencia visualmente impresionante.
