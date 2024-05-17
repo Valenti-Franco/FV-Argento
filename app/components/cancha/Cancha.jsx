@@ -1,14 +1,27 @@
 "use client";
-import React, { Children, Suspense, useRef } from "react";
+import React, { Children, Suspense, useDeferredValue, useRef } from "react";
 import style from "./index.module.css";
 // import ImagenConMousemove from "@/escudos/ImagenConMousemove";
 // import ImagenConMousemove from "../escudos/ImagenConMousemove";
 import { Canvas, useThree } from "react-three-fiber";
-import { OrbitControls, Scroll, ScrollControls } from "@react-three/drei";
+import {
+  Environment,
+  OrbitControls,
+  PerspectiveCamera,
+  Scroll,
+  ScrollControls,
+} from "@react-three/drei";
 import json from "../../../public/info.json";
 import { AnimatePresence, motion } from "framer-motion";
 
 // import Experience from "../Experience";
+// "spruit_sunrise_4k.webp",
+// "spruit_sunrise_4k-gainmap.webp",
+// "spruit_sunrise_4k.json",
+
+import webp4k from "../../../public/spruit_sunrise_4k.webp";
+import webp4kgainmap from "../../../public/spruit_sunrise_4k-gainmap.webp";
+import sunrisejson from "../../../public/spruit_sunrise_4k.json";
 
 import Experience from "@/app/Experience";
 import { useState } from "react";
@@ -28,7 +41,7 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 // import { Link } from "react-router-dom";
-
+import { useControls, folder } from "leva";
 const Cancha = () => {
   const Escudo = useParams();
   const [isScroll, setisScroll] = useState(true);
@@ -36,7 +49,7 @@ const Cancha = () => {
   const cameraRef = useRef();
   // const { gl } = useThree();
   const [isScrollAnimate, setIsScrollAnimate] = useState(false);
-  const [isRotate, setisRotate] = useState(true);
+  const [isRotate, setisRotate] = useState(false);
   const [isOrbit, setisOrbit] = useState(false);
   const [enableControls, setEnableControls] = useState(false);
   const [noText, setNoText] = useState(false);
@@ -44,6 +57,25 @@ const Cancha = () => {
   const transform = enableControls ? "scale(1, -1)" : "";
   const equipoInfo = json.equipos.find((equipo) => equipo.nombre === Escudo.id);
   const background = `-webkit-linear-gradient(${equipoInfo.coloresPrincipales[0]}, ${equipoInfo.coloresPrincipales[1]},#000000)`;
+
+  function SelectEnv() {
+    let files = "spruit_sunrise_1k.hdr";
+    // Gainmap *.jpg
+
+    const deferred = useDeferredValue(files);
+    return (
+      <Environment
+        background
+        preset="night"
+        files={deferred}
+        // {...props}
+        // backgroundRotation={[0, backgroundRotation, 0]}
+        // environmentRotation={[0, environmentRotation, 0]}
+      />
+    );
+  }
+
+  // console.log(deferred);
   return (
     <motion.body
       initial={{ opacity: 0 }}
@@ -54,13 +86,14 @@ const Cancha = () => {
       className={style.CanchaContainer}
       style={{ background: background }}
     >
-      {/* <div
-        key={"container" + Escudo.id}
-        id={"container" + Escudo.id}
-        // className={style.Escudos}
-      ></div> */}
       <div style={{ width: "100%", height: "100dvh" }}>
-        <Canvas camera={{ zoom: 1, position: [25, 10, 5] }}>
+        <Canvas camera={{ zoom: 1, position: [25, 10, 5], far: 2000 }}>
+          <PerspectiveCamera
+            fov={75}
+            near={0.1} // Ajusta la distancia cercana según sea necesario
+            far={5000} // Ajusta la distancia lejana según sea necesario
+            position={[25, 10, 5]}
+          />
           {isOrbit && (
             <OrbitControls
               enableZoom={true}
@@ -77,8 +110,7 @@ const Cancha = () => {
               // }
             />
           )}
-
-          <ambientLight color={"#fffff"} intensity={2.5} />
+          <ambientLight color={"#fffff"} intensity={1.5} />
           <ScrollControls pages={4}>
             {Escudo.id !== "Newells" && (
               <>
@@ -92,6 +124,8 @@ const Cancha = () => {
             )}
 
             <Suspense fallback={null}>
+              <SelectEnv />
+
               <Experience
                 isOrbit={isOrbit}
                 isScrollAnimate={isScrollAnimate}

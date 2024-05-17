@@ -316,6 +316,7 @@ const Experience = ({
       state.camera.rotation.y = cameraRotationY.get();
     }
 
+    state.camera.far = 5000;
     // // state.camera = camera.get();
     // // state.camera.lookAt(cameraLookAtX.get(), -1, 22);
     // // Restaurar el zoom a su valor predeterminado para otras secciones diferentes de 1
